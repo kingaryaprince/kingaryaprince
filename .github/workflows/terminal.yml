@@ -1,0 +1,45 @@
+name: Refresh terminal GIF
+
+on:
+  schedule:
+    - cron: "17 8 * * 1"   # Mondays, 08:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install ffmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
+      - name: Install gifos
+        run: pip install --upgrade github-readme-terminal
+
+      - name: Render
+        env:
+          # A classic PAT or fine-grained PAT with Contents: read. The default
+          # GITHUB_TOKEN cannot run the contributionsCollection GraphQL query,
+          # so the script falls back to static text without this.
+          GITHUB_TOKEN: ${{ secrets.GH_STATS_TOKEN }}
+          GIFOS_GENERAL_COLOR_SCHEME: catppuccin-mocha
+        run: |
+          python scripts/terminal.py
+          test -s output.gif
+          mv output.gif assets/terminal.gif
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/terminal.gif
+          git diff --staged --quiet || git commit -m "chore: refresh terminal GIF"
+          git push
