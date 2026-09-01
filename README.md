@@ -1,12 +1,20 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=210&color=0:0b1220,50:11315e,100:2563eb&text=Arya%20Prince&fontSize=62&fontColor=e6edf3&fontAlignY=34&desc=backends%20%C2%B7%20on-device%20ML%20%C2%B7%20real-time%20vision&descSize=17&descAlignY=54&animation=fadeIn" width="100%" alt="Arya Prince" />
+<img src="assets/space-shooter.gif" width="100%" alt="A space shooter clearing my contribution graph" />
 
-<a href="https://github.com/kingaryaprince">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&pause=1400&color=58A6FF&center=true&vCenter=true&width=780&height=40&lines=POST+%2Fbookings+returns+409+on+overlap;An+atomic+SET+NX+claims+the+capture+before+the+PSP+call;INT8+quantization%3A+7.07+MB+to+3.69+MB%2C+top-1+parity+held;33+ms%2Fframe+at+1080p%2C+30+fps" alt="What I work on" />
-</a>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=46&duration=1800&pause=99999&color=E6EDF3&center=true&vCenter=true&repeat=false&width=700&height=72&lines=Arya+Prince" />
+  <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=46&duration=1800&pause=99999&color=0D1117&center=true&vCenter=true&repeat=false&width=700&height=72&lines=Arya+Prince" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=46&duration=1800&pause=99999&color=58A6FF&center=true&vCenter=true&repeat=false&width=700&height=72&lines=Arya+Prince" alt="Arya Prince" />
+</picture>
 
-<br />
+**`backends`** · **`on-device ML`** · **`real-time vision`**
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=17&pause=1400&color=58A6FF&center=true&vCenter=true&width=780&height=34&lines=POST+%2Fbookings+returns+409+on+overlap;An+atomic+SET+NX+claims+the+capture+before+the+PSP+call;INT8+quantization%3A+7.07+MB+to+3.69+MB%2C+top-1+parity+held;33+ms%2Fframe+at+1080p%2C+30+fps" />
+  <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=17&pause=1400&color=0969DA&center=true&vCenter=true&width=780&height=34&lines=POST+%2Fbookings+returns+409+on+overlap;An+atomic+SET+NX+claims+the+capture+before+the+PSP+call;INT8+quantization%3A+7.07+MB+to+3.69+MB%2C+top-1+parity+held;33+ms%2Fframe+at+1080p%2C+30+fps" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=17&pause=1400&color=58A6FF&center=true&vCenter=true&width=780&height=34&lines=POST+%2Fbookings+returns+409+on+overlap;An+atomic+SET+NX+claims+the+capture+before+the+PSP+call;INT8+quantization%3A+7.07+MB+to+3.69+MB%2C+top-1+parity+held;33+ms%2Fframe+at+1080p%2C+30+fps" alt="What I work on" />
+</picture>
 
 <!-- Keep each badge row on ONE source line. GFM turns a newline between inline
      elements into a <br>, which stacks the badges vertically. -->
@@ -14,13 +22,13 @@
 
 <a href="https://linkedin.com/in/arya-prince"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a> <a href="mailto:aryaprince@berkeley.edu"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a> <img src="https://komarev.com/ghpvc/?username=kingaryaprince&style=for-the-badge&color=2563eb&label=PROFILE+VIEWS" alt="Profile views" />
 
-<br /><br />
+<br />
 
 <img src="assets/terminal.gif" width="94%" alt="Terminal session: whoami, live GitHub stats, what I am working on" />
 
 </div>
 
-<h3 align="center">═══════ ✦ Now ✦ ═══════</h3>
+## ~/now
 
 - **CS 61A course staff**, UC Berkeley. 30+ students a week on interpreters, recursion, and environment diagrams.
 - **Science and Beyond**, founder. AI and programming workshops for 100+ K-12 students.
@@ -30,7 +38,7 @@ I mostly write backends and on-device ML, and I care about the parts that only s
 something breaks: double bookings that return a 409, payment captures that stay single under
 concurrency, models small enough to run with the network off.
 
-<h3 align="center">═══════ ✦ Recently ✦ ═══════</h3>
+## ~/recently
 
 - **Parallax Defense** — software engineering intern, summer 2026. Real-time detection and
   tracking against a 33 ms/frame budget at 1080p/30fps. Wrote the detection-head decode and the
@@ -43,7 +51,7 @@ concurrency, models small enough to run with the network off.
   report the lab used to pick its operating point.
 - **Technovation** — backend engineer on a 4-person team, spring 2026. Details below.
 
-<h3 align="center">═══════ ✦ Projects ✦ ═══════</h3>
+## ~/projects
 
 | | What it is | Worth knowing |
 |---|---|---|
@@ -55,7 +63,7 @@ concurrency, models small enough to run with the network off.
 | **[Science and Beyond](https://github.com/kingaryaprince/science-and-beyond-website)** | Site for the nonprofit. Next.js App Router with Sanity as a headless CMS. | Studio embedded at `/studio`, Portable Text rendering, and dynamic blog routes off the CMS, so the people writing the content never touch the repo. |
 | **[Gradescope → Calendar](https://github.com/kingaryaprince/GradescopeGCALSync)** | Scrapes Gradescope and pushes new assignments into Google Calendar. | Selenium plus OAuth2, retry with backoff, driven from a CLI. Written because I kept missing deadlines. |
 
-<h3 align="center">═══════ ✦ Stack ✦ ═══════</h3>
+## ~/stack
 
 <div align="center">
 
@@ -104,21 +112,8 @@ concurrency, models small enough to run with the network off.
 
 </div>
 
-<h3 align="center">═══════ ✦ Contribution Graph, Weaponized ✦ ═══════</h3>
-
-<div align="center">
-
-<img src="assets/space-shooter.gif" width="94%" alt="A space shooter played across my contribution graph" />
-
-<sub>Every commit is an enemy. Regenerated daily by <a href="https://github.com/czl9707/gh-space-shooter">gh-space-shooter</a>.
-Commit, PR, and language counts are in the terminal at the top, refreshed weekly from the GraphQL API.</sub>
-
-</div>
-
-<h3 align="center">═══════ ✦ Elsewhere ✦ ═══════</h3>
+## ~/elsewhere
 
 Two AGU presentations, a TechRxiv preprint, and an ESA-funded remote sensing project sit behind
 the wildfire and CropCast work above. Reach me at
 [aryaprince@berkeley.edu](mailto:aryaprince@berkeley.edu).
-
-<img src="https://capsule-render.vercel.app/api?type=waving&section=footer&height=120&color=0:2563eb,50:11315e,100:0b1220" width="100%" alt="" />

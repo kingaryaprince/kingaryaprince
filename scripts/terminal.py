@@ -35,6 +35,7 @@ FALLBACK_ROWS = [
 FALLBACK_LANGS = [("Python", 47.9), ("TypeScript", 47.2), ("Swift", 0.6)]
 
 
+
 def fetch():
     """Return (stat_rows, languages). Falls back to static text if the API fails."""
     try:
@@ -59,10 +60,12 @@ def fetch():
 
 def bar(pct):
     filled = round(BAR_WIDTH * pct / 100)
-    return f"{G}{'#' * filled}{R}{D}{'.' * (BAR_WIDTH - filled)}{R}"
+    return f"{G}{'=' * filled}{R}{D}{'.' * (BAR_WIDTH - filled)}{R}"
 
 
 def main():
+    # 22 rows at 18px line pitch, plus 2x ypad. Adding a row overflows and the
+    # trailing prompt silently drops off the bottom.
     t = gifos.Terminal(width=1000, height=430, xpad=16, ypad=14)
     t.set_fps(18)
     t.set_prompt(f"{G}arya{R}@{Y}berkeley{R}:{B}~{R}$ ")
